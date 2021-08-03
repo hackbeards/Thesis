@@ -1,0 +1,53 @@
+\chapter{Style Notes}
+
+\section{Figures}
+\subsection{Colors}
+
+\begin{itemize}
+	\item blue lines, \textcolor{tud2c}{tud2c}
+	\item red lines, \textcolor{tud9c}{tud9c}
+	\item green lines, \textcolor{tud4d}{tud4d}
+	\item dashed grey line grey
+\end{itemize}
+
+\subsection{Sizes}
+\newpage
+\subsubsection{Two pictures on one page}
+\begin{verbatim}
+graphics.latex_plot_teske, lpp.newfig(width=0.7, height=0.4)}
+\end{verbatim}
+\begin{figure}[htb]
+\centering
+\includegraphics[scale=1]{Sources/2n_2_l_0.eps} 
+\caption{Test figure to check sizes.}
+\includegraphics[scale=1]{Sources/2n_2_l_0.eps} 
+\caption{Test figure to check sizes.}
+\end{figure}
+\newpage
+\begin{verbatim}
+graphics.latex_plot_thesis_teske, lpp.newfig(width=0.7, height=0.4)}
+\end{verbatim}
+\begin{figure}[htb]
+\centering
+\includegraphics[scale=1]{Sources/2n_2_l_0_thesis.eps} 
+\caption{Test figure to check sizes.}
+\includegraphics[scale=1]{Sources/2n_2_l_0_thesis.eps} 
+\caption{Test figure to check sizes.}
+\end{figure}
+\subsubsection{Single picture - side caption}
+Use pgf plot for sidecap with cap textwidth 0.7
+\begin{verbatim}
+ lpp.newfig(width=0.5, height=0.25)
+\end{verbatim}
+\begin{SCfigure}
+\captionsetup{format=plain, width=0.7\textwidth}
+\caption{Test figure to check sizes.Test figure to check sizes.Test figure to check sizes.Test figure to check sizes.Test figure to check sizes.Test figure to check sizes.Test figure to check sizes.Test figure to check sizes.Test figure to check sizes.}
+\hfill
+%\includegraphics[width=0.5\textwidth]{Sources/2n_2_l_0_thesis_sidec.eps} 
+\input{Sources/2n_2_l_0_thesis_sidec.pgf}
+\end{SCfigure}
+
+
+
+
+
